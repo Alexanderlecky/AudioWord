@@ -1,13 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AudioWord</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Transcriber</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Audio Transcriber</h1>
+        <form id="upload-form" enctype="multipart/form-data">
+            <label for="file">Upload Audio File:</label>
+            <input type="file" id="file" name="file" required>
+            <button type="submit">Transcribe</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="/static/scripts.js"></script>
+</body>
 </html>
